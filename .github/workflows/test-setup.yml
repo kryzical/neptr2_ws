@@ -18,17 +18,15 @@ jobs:
         run: |
           chmod +x setup.sh
           ./setup.sh
-          echo "List of added apt repositories:"
-          cat /etc/apt/sources.list.d/*
-          echo "List of installed packages:"
-          dpkg -l
-          echo "Verifying Gazebo installation..."
-          dpkg -l | grep ignition || (echo "Gazebo Fortress is not installed!" && exit 1)
-          gazebo --version || (echo "Gazebo is not installed!" && exit 1)
+          echo "APT Repositories:"
+          cat /etc/apt/sources.list.d/* || echo "No repositories found."
+          echo "Installed Packages:"
+          dpkg -l | grep ignition || (echo "Error: Gazebo Fortress not found in installed packages!" && exit 1)
 
-      - name: Verify Gazebo installation
+      - name: Verify Ignition Gazebo installation
         run: |
-          if ! gazebo --version; then
-            echo "Gazebo Fortress is not installed!" && exit 1
+          if ! command -v ign &> /dev/null; then
+            echo "Error: Ignition Gazebo binary not found!" && exit 1
           fi
-          echo "Gazebo Fortress is installed successfully with version $(gazebo --version)."
+          echo "Ignition Gazebo binary located at: $(command -v ign)"
+          ign gazebo --versions || (echo "Error: Ignition Gazebo version command failed!" && exit 1)
