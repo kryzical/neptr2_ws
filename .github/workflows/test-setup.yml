@@ -23,11 +23,12 @@ jobs:
           echo "List of installed packages:"
           dpkg -l
           echo "Verifying Gazebo installation..."
-          dpkg -l | grep ignition-fortress || (echo "Gazebo Fortress is not installed!" && exit 1)
+          dpkg -l | grep ignition || (echo "Gazebo Fortress is not installed!" && exit 1)
+          gazebo --version || (echo "Gazebo is not installed!" && exit 1)
 
       - name: Verify Gazebo installation
         run: |
-          if ! ign --version; then
+          if ! gazebo --version; then
             echo "Gazebo Fortress is not installed!" && exit 1
           fi
-          echo "Gazebo Fortress is installed successfully with version $(ign --version)."
+          echo "Gazebo Fortress is installed successfully with version $(gazebo --version)."
