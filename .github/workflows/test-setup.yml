@@ -1,0 +1,32 @@
+name: Test Gazebo Setup
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  test-setup:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies and Gazebo
+        run: |
+          chmod +x setup.sh
+          ./setup.sh
+
+      - name: Verify installation
+        run: |
+          if ! dpkg -l | grep -q ignition-fortress; then
+            echo "Gazebo Fortress is not installed!" && exit 1
+          fi
+          echo "Gazebo Fortress is installed successfully."
+
+      - name: Run Gazebo headless test
+        run: |
+          ign gazebo -s 2>/dev/null || (echo "Gazebo failed to start!" && exit 1)
+          echo "Gazebo started successfully in headless mode."
