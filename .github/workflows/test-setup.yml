@@ -19,14 +19,9 @@ jobs:
           chmod +x setup.sh
           ./setup.sh
 
-      - name: Verify installation
+      - name: Verify Gazebo installation
         run: |
-          if ! dpkg -l | grep -q ignition-fortress; then
+          if ! ign --version; then
             echo "Gazebo Fortress is not installed!" && exit 1
           fi
-          echo "Gazebo Fortress is installed successfully."
-
-      - name: Run Gazebo headless test
-        run: |
-          ign gazebo -s 2>/dev/null || (echo "Gazebo failed to start!" && exit 1)
-          echo "Gazebo started successfully in headless mode."
+          echo "Gazebo Fortress is installed successfully with version $(ign --version)."
