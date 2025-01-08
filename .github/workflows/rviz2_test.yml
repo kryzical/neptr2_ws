@@ -1,0 +1,32 @@
+name: Test RViz2 Setup
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  test-rviz2-setup:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies and RViz2
+        run: |
+          chmod +x setup.sh
+          ./setup.sh
+          echo "APT Repositories:"
+          cat /etc/apt/sources.list.d/* || echo "No repositories found."
+          echo "Installed Packages:"
+          dpkg -l | grep rviz || (echo "Error: RViz2 not found in installed packages!" && exit 1)
+
+      - name: Verify RViz2 installation
+        run: |
+          if ! command -v rviz2 &> /dev/null; then
+            echo "Error: RViz2 binary not found!" && exit 1
+          fi
+          echo "RViz2 binary located at: $(command -v rviz2)"
+          rviz2 --version || (echo "Error: RViz2 version command failed!" && exit 1)
