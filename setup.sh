@@ -44,3 +44,13 @@ sudo apt-get clean
 
 echo "Setup complete! Gazebo Fortress is now installed."
 echo "You can start Gazebo with the command 'ign gazebo'."
+
+# Install RViz2
+echo "Installing RViz2..."
+sudo apt-get install -y ros-$ROS_DISTRO-rviz2
+
+# Source the ROS environment
+echo "Sourcing ROS setup file..."
+source /opt/ros/$ROS_DISTRO/setup.bash
+
+echo "RViz2 installation complete! You can run RViz2 using the 'rviz2' command."
