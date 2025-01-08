@@ -18,6 +18,12 @@ jobs:
         run: |
           chmod +x setup.sh
           ./setup.sh
+          echo "List of added apt repositories:"
+          cat /etc/apt/sources.list.d/*
+          echo "List of installed packages:"
+          dpkg -l
+          echo "Verifying Gazebo installation..."
+          dpkg -l | grep ignition-fortress || (echo "Gazebo Fortress is not installed!" && exit 1)
 
       - name: Verify Gazebo installation
         run: |
