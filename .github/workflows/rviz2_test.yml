@@ -32,6 +32,10 @@ jobs:
           echo "Installed Packages:"
           dpkg -l | grep rviz || (echo "Error: RViz2 not found in installed packages!" && exit 1)
 
+      - name: Create minimal RViz2 configuration
+        run: |
+          echo "<rviz><display_groups/><displays/><views><view_controller type='rviz/TopDownOrtho' /></views></rviz>" > minimal_config.rviz
+
       - name: Verify RViz2 installation
         run: |
           source /opt/ros/humble/setup.bash
@@ -39,9 +43,9 @@ jobs:
             echo "Error: RViz2 binary not found!" && exit 1
           fi
           echo "RViz2 binary located at: $(command -v rviz2)"
-          xvfb-run -a rviz2 --version || (echo "Error: RViz2 version command failed!" && exit 1)
+          xvfb-run -a rviz2 -d minimal_config.rviz || (echo "Error: RViz2 command failed!" && exit 1)
 
       - name: Test RViz2 command
         run: |
           source /opt/ros/humble/setup.bash
-          xvfb-run -a rviz2 --version || (echo "Error: RViz2 version command failed!" && exit 1)
+          xvfb-run -a rviz2 -d minimal_config.rviz || (echo "Error: RViz2 command failed!" && exit 1)
