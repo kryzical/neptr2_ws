@@ -16,6 +16,9 @@ jobs:
 
       - name: Install dependencies and RViz2
         run: |
+          sudo apt update
+          sudo apt install ros-humble-rviz2 -y
+          source /opt/ros/humble/setup.bash
           chmod +x setup.sh
           ./setup.sh
           echo "APT Repositories:"
@@ -25,6 +28,7 @@ jobs:
 
       - name: Verify RViz2 installation
         run: |
+          source /opt/ros/humble/setup.bash
           if ! command -v rviz2 &> /dev/null; then
             echo "Error: RViz2 binary not found!" && exit 1
           fi
