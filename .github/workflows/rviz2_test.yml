@@ -43,6 +43,5 @@ jobs:
 
       - name: Test RViz2 command
         run: |
-          sudo apt install ros-humble-rviz2 -y
           source /opt/ros/humble/setup.bash
-          rviz2
+          rviz2 --version || (echo "Error: RViz2 version command failed!" && exit 1)
