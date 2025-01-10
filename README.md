@@ -7,6 +7,8 @@ to view the original repository go here -> https://github.com/jordanlikescoding/
 this repository is forked to test .rosinstall packages work correctly, test pulling the repository from a new enviroment with no installed packages and any experimental ideas that can be isolated in this repository.
 
 this repository is also ran in WSL to test and differences between WSL or linux ubuntu platform
+
+visit the wiki for this github for more info
 ----
 experimental ideas
 - rebuild project in the newest pairing system, jazzy/harmonic 
