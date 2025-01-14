@@ -1,0 +1,4 @@
+Invoking command in '/home/ws/build/ros_gz_example_application': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ws/build/ros_gz_example_application -- -j12 -l12
+Invoked command in '/home/ws/build/ros_gz_example_application' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ws/build/ros_gz_example_application -- -j12 -l12
+Invoking command in '/home/ws/build/ros_gz_example_application': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ws/build/ros_gz_example_application
+Invoked command in '/home/ws/build/ros_gz_example_application' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ws/build/ros_gz_example_application

@@ -1,0 +1,591 @@
+[0.000000] (-) TimerEvent: {}
+[0.000504] (ros_gz_example_application) JobQueued: {'identifier': 'ros_gz_example_application', 'dependencies': OrderedDict()}
+[0.000755] (ros_gz_example_description) JobQueued: {'identifier': 'ros_gz_example_description', 'dependencies': OrderedDict()}
+[0.001391] (ros_gz_example_gazebo) JobQueued: {'identifier': 'ros_gz_example_gazebo', 'dependencies': OrderedDict([('ros_gz_example_description', '/home/ws/install/ros_gz_example_description')])}
+[0.001573] (ros_gz_example_bringup) JobQueued: {'identifier': 'ros_gz_example_bringup', 'dependencies': OrderedDict([('ros_gz_example_description', '/home/ws/install/ros_gz_example_description'), ('ros_gz_example_gazebo', '/home/ws/install/ros_gz_example_gazebo')])}
+[0.002424] (ros_gz_example_description) JobStarted: {'identifier': 'ros_gz_example_description'}
+[0.014247] (ros_gz_example_application) JobStarted: {'identifier': 'ros_gz_example_application'}
+[0.029050] (ros_gz_example_description) JobProgress: {'identifier': 'ros_gz_example_description', 'progress': 'cmake'}
+[0.048747] (ros_gz_example_description) JobProgress: {'identifier': 'ros_gz_example_description', 'progress': 'build'}
+[0.052966] (ros_gz_example_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ws/build/ros_gz_example_description', '--', '-j12', '-l12'], 'cwd': '/home/ws/build/ros_gz_example_description', 'env': OrderedDict([('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.062710] (ros_gz_example_application) JobProgress: {'identifier': 'ros_gz_example_application', 'progress': 'cmake'}
+[0.073863] (ros_gz_example_application) JobProgress: {'identifier': 'ros_gz_example_application', 'progress': 'build'}
+[0.077419] (ros_gz_example_application) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ws/build/ros_gz_example_application', '--', '-j12', '-l12'], 'cwd': '/home/ws/build/ros_gz_example_application', 'env': OrderedDict([('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_application'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098756] (-) TimerEvent: {}
+[0.156168] (ros_gz_example_description) CommandEnded: {'returncode': 0}
+[0.168471] (ros_gz_example_description) JobProgress: {'identifier': 'ros_gz_example_description', 'progress': 'install'}
+[0.180104] (ros_gz_example_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ws/build/ros_gz_example_description'], 'cwd': '/home/ws/build/ros_gz_example_description', 'env': OrderedDict([('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.183332] (ros_gz_example_application) CommandEnded: {'returncode': 0}
+[0.190046] (ros_gz_example_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.196455] (ros_gz_example_application) JobProgress: {'identifier': 'ros_gz_example_application', 'progress': 'install'}
+[0.197432] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models\n'}
+[0.198820] (-) TimerEvent: {}
+[0.199451] (ros_gz_example_application) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ws/build/ros_gz_example_application'], 'cwd': '/home/ws/build/ros_gz_example_application', 'env': OrderedDict([('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_application'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.209651] (ros_gz_example_application) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.217695] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive\n'}
+[0.233491] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_application\n'}
+[0.243667] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive/model.config\n'}
+[0.261154] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_application\n'}
+[0.263520] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive/model.sdf\n'}
+[0.275209] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/environment/ament_prefix_path.sh\n'}
+[0.277147] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/rrbot\n'}
+[0.290782] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/environment/ament_prefix_path.dsv\n'}
+[0.298972] (-) TimerEvent: {}
+[0.300663] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/rrbot/model.sdf\n'}
+[0.303893] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/environment/path.sh\n'}
+[0.319011] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.dsv\n'}
+[0.321737] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/environment/path.dsv\n'}
+[0.337028] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.sh\n'}
+[0.337797] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/local_setup.bash\n'}
+[0.352060] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/local_setup.sh\n'}
+[0.364555] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_description\n'}
+[0.367489] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/local_setup.zsh\n'}
+[0.382820] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/local_setup.dsv\n'}
+[0.392713] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_description\n'}
+[0.398195] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/package.dsv\n'}
+[0.399215] (-) TimerEvent: {}
+[0.406911] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.sh\n'}
+[0.424857] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.dsv\n'}
+[0.437212] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.sh\n'}
+[0.454075] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.dsv\n'}
+[0.457899] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ament_index/resource_index/packages/ros_gz_example_application\n'}
+[0.469868] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.bash\n'}
+[0.475828] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/cmake/ros_gz_example_applicationConfig.cmake\n'}
+[0.483967] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.sh\n'}
+[0.489009] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/cmake/ros_gz_example_applicationConfig-version.cmake\n'}
+[0.498796] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.zsh\n'}
+[0.499756] (-) TimerEvent: {}
+[0.505299] (ros_gz_example_application) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_application/share/ros_gz_example_application/package.xml\n'}
+[0.514986] (ros_gz_example_application) CommandEnded: {'returncode': 0}
+[0.516625] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.dsv\n'}
+[0.531638] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/package.dsv\n'}
+[0.589373] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ament_index/resource_index/packages/ros_gz_example_description\n'}
+[0.599876] (-) TimerEvent: {}
+[0.606294] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig.cmake\n'}
+[0.620996] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig-version.cmake\n'}
+[0.637318] (ros_gz_example_description) StdoutLine: {'line': b'-- Up-to-date: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/package.xml\n'}
+[0.700009] (-) TimerEvent: {}
+[0.800539] (-) TimerEvent: {}
+[0.901077] (-) TimerEvent: {}
+[0.959212] (ros_gz_example_application) JobEnded: {'identifier': 'ros_gz_example_application', 'rc': 0}
+[0.965764] (ros_gz_example_description) CommandEnded: {'returncode': 0}
+[1.001194] (-) TimerEvent: {}
+[1.101637] (-) TimerEvent: {}
+[1.202178] (-) TimerEvent: {}
+[1.302801] (-) TimerEvent: {}
+[1.377825] (ros_gz_example_description) JobEnded: {'identifier': 'ros_gz_example_description', 'rc': 0}
+[1.384507] (ros_gz_example_gazebo) JobStarted: {'identifier': 'ros_gz_example_gazebo'}
+[1.402915] (-) TimerEvent: {}
+[1.413258] (ros_gz_example_gazebo) JobProgress: {'identifier': 'ros_gz_example_gazebo', 'progress': 'cmake'}
+[1.434790] (ros_gz_example_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/ws/ros_gz_example_gazebo', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/home/ws/install/ros_gz_example_gazebo'], 'cwd': '/home/ws/build/ros_gz_example_gazebo', 'env': OrderedDict([('GZ_SIM_RESOURCE_PATH', '/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/install/ros_gz_example_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_gazebo'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[1.484597] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.503019] (-) TimerEvent: {}
+[1.603758] (-) TimerEvent: {}
+[1.658498] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ros_gz_example_description: 0.0.0 (/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake)\n'}
+[1.697892] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[1.739609] (-) TimerEvent: {}
+[1.740312] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.778300] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[1.779316] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.780049] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[1.813581] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.0\n'}
+[1.814642] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[1.815480] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[1.839737] (-) TimerEvent: {}
+[1.847523] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.3\n'}
+[1.848760] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[1.882389] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[1.883783] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.884424] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[1.886587] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.902973] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.904071] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.924054] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.939870] (-) TimerEvent: {}
+[1.947087] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.973213] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.974741] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[2.009455] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.7.0\n'}
+[2.010304] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[2.040001] (-) TimerEvent: {}
+[2.044954] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sim7 -- found version 7.9.0\n'}
+[2.045695] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim7\n'}
+[2.079086] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[2.079988] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of sdformat13\n'}
+[2.084745] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.105917] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.140116] (-) TimerEvent: {}
+[2.164269] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[2.164997] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[2.165760] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[2.166861] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[2.167534] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[2.168175] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[2.169029] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[2.169731] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[2.203845] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.3\n'}
+[2.204668] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[2.205370] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[2.239914] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[2.241152] (-) TimerEvent: {}
+[2.241580] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12\n'}
+[2.341323] (-) TimerEvent: {}
+[2.441919] (-) TimerEvent: {}
+[2.542445] (-) TimerEvent: {}
+[2.643058] (-) TimerEvent: {}
+[2.743583] (-) TimerEvent: {}
+[2.844139] (-) TimerEvent: {}
+[2.944800] (-) TimerEvent: {}
+[3.045528] (-) TimerEvent: {}
+[3.146080] (-) TimerEvent: {}
+[3.246826] (-) TimerEvent: {}
+[3.347236] (-) TimerEvent: {}
+[3.431649] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[3.447293] (-) TimerEvent: {}
+[3.522273] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[3.526300] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[3.547355] (-) TimerEvent: {}
+[3.552236] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[3.581206] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[3.591384] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[3.629320] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[3.630340] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs9\n'}
+[3.647473] (-) TimerEvent: {}
+[3.720931] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[3.726688] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport12> component [log]\n'}
+[3.747541] (-) TimerEvent: {}
+[3.761521] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport12-log -- found version 12.2.2\n'}
+[3.762503] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12-log\n'}
+[3.763317] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport12> component [parameters]\n'}
+[3.796625] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport12-parameters -- found version 12.2.2\n'}
+[3.797297] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12-parameters\n'}
+[3.797869] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[3.798482] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[3.799271] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[3.800135] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[3.800799] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[3.801633] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[3.805753] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[3.806669] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[3.845072] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.7.0\n'}
+[3.846030] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[3.846846] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[3.847597] (-) TimerEvent: {}
+[3.847872] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[3.882099] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.7.0\n'}
+[3.883173] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[3.887442] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[3.913890] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[3.938980] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[3.944737] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[3.947645] (-) TimerEvent: {}
+[3.972195] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[3.998561] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[4.003616] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[4.028116] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[4.047794] (-) TimerEvent: {}
+[4.051375] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[4.056731] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[4.084295] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[4.108545] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[4.112792] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[4.137448] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[4.147858] (-) TimerEvent: {}
+[4.160579] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[4.161705] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[4.194272] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.7.0\n'}
+[4.195011] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[4.228512] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-fuel_tools8 -- found version 8.2.0\n'}
+[4.229211] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools8\n'}
+[4.247991] (-) TimerEvent: {}
+[4.348463] (-) TimerEvent: {}
+[4.424279] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[4.448587] (-) TimerEvent: {}
+[4.466520] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[4.491246] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[4.523620] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[4.548740] (-) TimerEvent: {}
+[4.571452] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[4.598258] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[4.628882] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[4.630278] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[4.631478] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[4.632574] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[4.633755] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[4.634601] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[4.635349] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[4.639509] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[4.648876] (-) TimerEvent: {}
+[4.687526] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.7.0\n'}
+[4.688471] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[4.689724] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[4.690683] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[4.734372] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-gui7 -- found version 7.2.2\n'}
+[4.735431] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui7\n'}
+[4.749049] (-) TimerEvent: {}
+[4.847259] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[4.848448] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[4.849226] (-) TimerEvent: {}
+[4.849596] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[4.850455] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[4.851247] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[4.890927] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[4.945296] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering7\n'}
+[4.946344] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[4.947437] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[4.948188] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[4.948890] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[4.949459] (-) TimerEvent: {}
+[4.981570] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.5.1\n'}
+[4.982321] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[5.029237] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[5.030090] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[5.030693] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[5.031241] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[5.031787] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[5.037618] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[5.049588] (-) TimerEvent: {}
+[5.077178] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.7.0\n'}
+[5.078101] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[5.078724] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[5.149698] (-) TimerEvent: {}
+[5.152057] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.2.0") \n'}
+[5.152723] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[5.153384] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[5.180317] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.7.0\n'}
+[5.183864] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[5.184476] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[5.185161] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[5.185742] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[5.186341] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[5.186927] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[5.187569] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[5.209865] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.3\n'}
+[5.212307] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[5.213141] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[5.247442] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[5.248725] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[5.249767] (-) TimerEvent: {}
+[5.350163] (-) TimerEvent: {}
+[5.364050] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics6 -- found version 6.7.0\n'}
+[5.364824] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6\n'}
+[5.365504] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[5.366109] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[5.366743] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[5.367888] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[5.368701] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [heightmap]\n'}
+[5.401030] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics6-heightmap -- found version 6.7.0\n'}
+[5.402014] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-heightmap\n'}
+[5.402746] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[5.403550] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [mesh]\n'}
+[5.435504] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics6-mesh -- found version 6.7.0\n'}
+[5.436549] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-mesh\n'}
+[5.437328] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[5.437938] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [sdf]\n'}
+[5.450327] (-) TimerEvent: {}
+[5.471231] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics6-sdf -- found version 6.7.0\n'}
+[5.471970] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-sdf\n'}
+[5.472533] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[5.506044] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[5.506749] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7\n'}
+[5.550443] (-) TimerEvent: {}
+[5.598331] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[5.599339] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[5.599970] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[5.600735] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[5.601435] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[5.602075] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[5.602665] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [air_pressure]\n'}
+[5.634624] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-air_pressure -- found version 7.3.1\n'}
+[5.635379] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-air_pressure\n'}
+[5.635998] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [air_speed]\n'}
+[5.650568] (-) TimerEvent: {}
+[5.670716] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-air_speed -- found version 7.3.1\n'}
+[5.671455] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-air_speed\n'}
+[5.672099] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [altimeter]\n'}
+[5.704394] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-altimeter -- found version 7.3.1\n'}
+[5.705128] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-altimeter\n'}
+[5.705848] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [imu]\n'}
+[5.739044] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-imu -- found version 7.3.1\n'}
+[5.740000] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-imu\n'}
+[5.740659] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [force_torque]\n'}
+[5.750673] (-) TimerEvent: {}
+[5.773603] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-force_torque -- found version 7.3.1\n'}
+[5.774681] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-force_torque\n'}
+[5.775376] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [logical_camera]\n'}
+[5.807889] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-logical_camera -- found version 7.3.1\n'}
+[5.808850] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-logical_camera\n'}
+[5.809747] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [magnetometer]\n'}
+[5.841655] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-magnetometer -- found version 7.3.1\n'}
+[5.842362] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-magnetometer\n'}
+[5.842994] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [navsat]\n'}
+[5.850788] (-) TimerEvent: {}
+[5.876505] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-navsat -- found version 7.3.1\n'}
+[5.877255] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-navsat\n'}
+[5.878039] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rendering]\n'}
+[5.910623] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-rendering -- found version 7.3.1\n'}
+[5.911481] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rendering\n'}
+[5.912359] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [lidar]\n'}
+[5.945301] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-lidar -- found version 7.3.1\n'}
+[5.946224] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-lidar\n'}
+[5.946893] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[5.947552] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [gpu_lidar]\n'}
+[5.950869] (-) TimerEvent: {}
+[5.982001] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-gpu_lidar -- found version 7.3.1\n'}
+[5.983612] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-gpu_lidar\n'}
+[5.984351] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[5.985028] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [camera]\n'}
+[6.017912] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-camera -- found version 7.3.1\n'}
+[6.018674] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-camera\n'}
+[6.019252] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[6.019840] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [boundingbox_camera]\n'}
+[6.050992] (-) TimerEvent: {}
+[6.052632] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-boundingbox_camera -- found version 7.3.1\n'}
+[6.053267] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-boundingbox_camera\n'}
+[6.053809] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [segmentation_camera]\n'}
+[6.089215] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-segmentation_camera -- found version 7.3.1\n'}
+[6.090198] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-segmentation_camera\n'}
+[6.090849] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [depth_camera]\n'}
+[6.124155] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-depth_camera -- found version 7.3.1\n'}
+[6.124925] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-depth_camera\n'}
+[6.125527] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[6.126117] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rgbd_camera]\n'}
+[6.151103] (-) TimerEvent: {}
+[6.159896] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-rgbd_camera -- found version 7.3.1\n'}
+[6.160741] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rgbd_camera\n'}
+[6.161959] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[6.162810] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [thermal_camera]\n'}
+[6.189540] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-thermal_camera -- found version 7.3.1\n'}
+[6.191569] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-thermal_camera\n'}
+[6.192345] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[6.193068] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [wide_angle_camera]\n'}
+[6.217870] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors7-wide_angle_camera -- found version 7.3.1\n'}
+[6.220937] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-wide_angle_camera\n'}
+[6.221665] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[6.222620] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[6.223766] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[6.251214] (-) TimerEvent: {}
+[6.298760] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Compiling against Gazebo Garden\n'}
+[6.327008] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.351334] (-) TimerEvent: {}
+[6.451817] (-) TimerEvent: {}
+[6.552276] (-) TimerEvent: {}
+[6.652735] (-) TimerEvent: {}
+[6.745685] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.752865] (-) TimerEvent: {}
+[6.853336] (-) TimerEvent: {}
+[6.953864] (-) TimerEvent: {}
+[7.054377] (-) TimerEvent: {}
+[7.058626] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[7.154509] (-) TimerEvent: {}
+[7.255221] (-) TimerEvent: {}
+[7.270343] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/ws/build/ros_gz_example_gazebo\n'}
+[7.279425] (ros_gz_example_gazebo) CommandEnded: {'returncode': 0}
+[7.282975] (ros_gz_example_gazebo) JobProgress: {'identifier': 'ros_gz_example_gazebo', 'progress': 'build'}
+[7.286550] (ros_gz_example_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ws/build/ros_gz_example_gazebo', '--', '-j12', '-l12'], 'cwd': '/home/ws/build/ros_gz_example_gazebo', 'env': OrderedDict([('GZ_SIM_RESOURCE_PATH', '/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/install/ros_gz_example_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_gazebo'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[7.355286] (-) TimerEvent: {}
+[7.427939] (ros_gz_example_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/FullSystem.dir/src/FullSystem.cc.o\x1b[0m\n'}
+[7.428987] (ros_gz_example_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/BasicSystem.dir/src/BasicSystem.cc.o\x1b[0m\n'}
+[7.455410] (-) TimerEvent: {}
+[7.555935] (-) TimerEvent: {}
+[7.656515] (-) TimerEvent: {}
+[7.756979] (-) TimerEvent: {}
+[7.857670] (-) TimerEvent: {}
+[7.958158] (-) TimerEvent: {}
+[8.058688] (-) TimerEvent: {}
+[8.159126] (-) TimerEvent: {}
+[8.259713] (-) TimerEvent: {}
+[8.360288] (-) TimerEvent: {}
+[8.460871] (-) TimerEvent: {}
+[8.561536] (-) TimerEvent: {}
+[8.662233] (-) TimerEvent: {}
+[8.762835] (-) TimerEvent: {}
+[8.863560] (-) TimerEvent: {}
+[8.964235] (-) TimerEvent: {}
+[9.064828] (-) TimerEvent: {}
+[9.165539] (-) TimerEvent: {}
+[9.266224] (-) TimerEvent: {}
+[9.366862] (-) TimerEvent: {}
+[9.467483] (-) TimerEvent: {}
+[9.568178] (-) TimerEvent: {}
+[9.668866] (-) TimerEvent: {}
+[9.769479] (-) TimerEvent: {}
+[9.870159] (-) TimerEvent: {}
+[9.970851] (-) TimerEvent: {}
+[10.071479] (-) TimerEvent: {}
+[10.172072] (-) TimerEvent: {}
+[10.265100] (ros_gz_example_gazebo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libBasicSystem.so\x1b[0m\n'}
+[10.272169] (-) TimerEvent: {}
+[10.372724] (-) TimerEvent: {}
+[10.464764] (ros_gz_example_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libFullSystem.so\x1b[0m\n'}
+[10.472826] (-) TimerEvent: {}
+[10.573273] (-) TimerEvent: {}
+[10.655222] (ros_gz_example_gazebo) StdoutLine: {'line': b'[100%] Built target BasicSystem\n'}
+[10.673390] (-) TimerEvent: {}
+[10.773898] (-) TimerEvent: {}
+[10.865732] (ros_gz_example_gazebo) StdoutLine: {'line': b'[100%] Built target FullSystem\n'}
+[10.874020] (-) TimerEvent: {}
+[10.892763] (ros_gz_example_gazebo) CommandEnded: {'returncode': 0}
+[10.905087] (ros_gz_example_gazebo) JobProgress: {'identifier': 'ros_gz_example_gazebo', 'progress': 'install'}
+[10.908148] (ros_gz_example_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ws/build/ros_gz_example_gazebo'], 'cwd': '/home/ws/build/ros_gz_example_gazebo', 'env': OrderedDict([('GZ_SIM_RESOURCE_PATH', '/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/install/ros_gz_example_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_gazebo'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[10.917611] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.931059] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo/libBasicSystem.so\n'}
+[10.974145] (-) TimerEvent: {}
+[10.995377] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo/libFullSystem.so\n'}
+[11.062694] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds\n'}
+[11.074256] (-) TimerEvent: {}
+[11.083941] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds/diff_drive.sdf\n'}
+[11.148306] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.dsv\n'}
+[11.174367] (-) TimerEvent: {}
+[11.203301] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.sh\n'}
+[11.269532] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_gazebo\n'}
+[11.274490] (-) TimerEvent: {}
+[11.368147] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_gazebo\n'}
+[11.374643] (-) TimerEvent: {}
+[11.458188] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.sh\n'}
+[11.474766] (-) TimerEvent: {}
+[11.509216] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.dsv\n'}
+[11.557406] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.sh\n'}
+[11.574895] (-) TimerEvent: {}
+[11.604710] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.dsv\n'}
+[11.654832] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.bash\n'}
+[11.675038] (-) TimerEvent: {}
+[11.699396] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.sh\n'}
+[11.746870] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.zsh\n'}
+[11.775188] (-) TimerEvent: {}
+[11.795487] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.dsv\n'}
+[11.841856] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.dsv\n'}
+[11.875294] (-) TimerEvent: {}
+[11.909685] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/packages/ros_gz_example_gazebo\n'}
+[11.975368] (-) TimerEvent: {}
+[11.980118] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig.cmake\n'}
+[12.034124] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig-version.cmake\n'}
+[12.075470] (-) TimerEvent: {}
+[12.089327] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.xml\n'}
+[12.133780] (ros_gz_example_gazebo) CommandEnded: {'returncode': 0}
+[12.175609] (-) TimerEvent: {}
+[12.276225] (-) TimerEvent: {}
+[12.376864] (-) TimerEvent: {}
+[12.477351] (-) TimerEvent: {}
+[12.577872] (-) TimerEvent: {}
+[12.649499] (ros_gz_example_gazebo) JobEnded: {'identifier': 'ros_gz_example_gazebo', 'rc': 0}
+[12.659006] (ros_gz_example_bringup) JobStarted: {'identifier': 'ros_gz_example_bringup'}
+[12.677964] (-) TimerEvent: {}
+[12.721198] (ros_gz_example_bringup) JobProgress: {'identifier': 'ros_gz_example_bringup', 'progress': 'cmake'}
+[12.755690] (ros_gz_example_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/ws/ros_gz_example_bringup', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/home/ws/install/ros_gz_example_bringup'], 'cwd': '/home/ws/build/ros_gz_example_bringup', 'env': OrderedDict([('GZ_SIM_RESOURCE_PATH', '/home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds:/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('GZ_SIM_PLUGIN_PATH', '/home/ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_bringup'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[12.778090] (-) TimerEvent: {}
+[12.878735] (-) TimerEvent: {}
+[12.979816] (-) TimerEvent: {}
+[13.017826] (ros_gz_example_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[13.079946] (-) TimerEvent: {}
+[13.180467] (-) TimerEvent: {}
+[13.187665] (ros_gz_example_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[13.232593] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[13.280598] (-) TimerEvent: {}
+[13.381119] (-) TimerEvent: {}
+[13.481604] (-) TimerEvent: {}
+[13.582121] (-) TimerEvent: {}
+[13.650353] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[13.671012] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[13.672008] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[13.672883] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[13.682270] (-) TimerEvent: {}
+[13.717885] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[13.782409] (-) TimerEvent: {}
+[13.883058] (-) TimerEvent: {}
+[13.983721] (-) TimerEvent: {}
+[14.084204] (-) TimerEvent: {}
+[14.138167] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[14.161639] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[14.162441] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[14.163073] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[14.184344] (-) TimerEvent: {}
+[14.284897] (-) TimerEvent: {}
+[14.385547] (-) TimerEvent: {}
+[14.429180] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[14.485650] (-) TimerEvent: {}
+[14.586123] (-) TimerEvent: {}
+[14.686596] (-) TimerEvent: {}
+[14.768943] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[14.786756] (-) TimerEvent: {}
+[14.887315] (-) TimerEvent: {}
+[14.987753] (-) TimerEvent: {}
+[15.088258] (-) TimerEvent: {}
+[15.188809] (-) TimerEvent: {}
+[15.289317] (-) TimerEvent: {}
+[15.389828] (-) TimerEvent: {}
+[15.490292] (-) TimerEvent: {}
+[15.590772] (-) TimerEvent: {}
+[15.691286] (-) TimerEvent: {}
+[15.791998] (-) TimerEvent: {}
+[15.892963] (-) TimerEvent: {}
+[15.993548] (-) TimerEvent: {}
+[16.094039] (-) TimerEvent: {}
+[16.115395] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found ros_gz_example_description: 0.0.0 (/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake)\n'}
+[16.188390] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found ros_gz_example_gazebo: 0.0.0 (/home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake)\n'}
+[16.194164] (-) TimerEvent: {}
+[16.269867] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[16.294307] (-) TimerEvent: {}
+[16.394877] (-) TimerEvent: {}
+[16.495354] (-) TimerEvent: {}
+[16.595825] (-) TimerEvent: {}
+[16.622803] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.695933] (-) TimerEvent: {}
+[16.796454] (-) TimerEvent: {}
+[16.846729] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[16.896591] (-) TimerEvent: {}
+[16.997185] (-) TimerEvent: {}
+[17.007041] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/ws/build/ros_gz_example_bringup\n'}
+[17.012947] (ros_gz_example_bringup) CommandEnded: {'returncode': 0}
+[17.017063] (ros_gz_example_bringup) JobProgress: {'identifier': 'ros_gz_example_bringup', 'progress': 'build'}
+[17.020244] (ros_gz_example_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ws/build/ros_gz_example_bringup', '--', '-j12', '-l12'], 'cwd': '/home/ws/build/ros_gz_example_bringup', 'env': OrderedDict([('GZ_SIM_RESOURCE_PATH', '/home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds:/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('GZ_SIM_PLUGIN_PATH', '/home/ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_bringup'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[17.034023] (ros_gz_example_bringup) StderrLine: {'line': b"gmake: Warning: File 'Makefile' has modification time 0.21 s in the future\n"}
+[17.097374] (-) TimerEvent: {}
+[17.103532] (ros_gz_example_bringup) StderrLine: {'line': b"gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 0.21 s in the future\n"}
+[17.104274] (ros_gz_example_bringup) StderrLine: {'line': b'gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[17.112529] (ros_gz_example_bringup) StderrLine: {'line': b'gmake: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[17.115536] (ros_gz_example_bringup) CommandEnded: {'returncode': 0}
+[17.129245] (ros_gz_example_bringup) JobProgress: {'identifier': 'ros_gz_example_bringup', 'progress': 'install'}
+[17.133679] (ros_gz_example_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ws/build/ros_gz_example_bringup'], 'cwd': '/home/ws/build/ros_gz_example_bringup', 'env': OrderedDict([('GZ_SIM_RESOURCE_PATH', '/home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds:/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('HOSTNAME', 'kyppy'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/helpers/browser.sh'), ('GZ_SIM_PLUGIN_PATH', '/home/ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo'), ('HOME', '/home/brian'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-21dd1b10-4120-4fab-bd47-4c83ce427b29.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c18787f8-e9b1-45b4-aecf-21a0f3263db8.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/fabdb6a30b49f79a7aba0f2ad9df9b399473380f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/brian/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/home/brian/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a3041d7b0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/build/ros_gz_example_bringup'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[17.142789] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.146302] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/launch\n'}
+[17.168849] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/launch/diff_drive.launch.py\n'}
+[17.197496] (-) TimerEvent: {}
+[17.223505] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/launch/rrbot_setup.launch.py\n'}
+[17.270974] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config\n'}
+[17.292179] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/diff_drive.rviz\n'}
+[17.297617] (-) TimerEvent: {}
+[17.347840] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/ros_gz_example_bridge.yaml\n'}
+[17.397685] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/rrbot.rviz\n'}
+[17.398641] (-) TimerEvent: {}
+[17.468028] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_bringup\n'}
+[17.498720] (-) TimerEvent: {}
+[17.551320] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_bringup\n'}
+[17.598821] (-) TimerEvent: {}
+[17.619954] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/environment/ament_prefix_path.sh\n'}
+[17.664395] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/environment/ament_prefix_path.dsv\n'}
+[17.698994] (-) TimerEvent: {}
+[17.710631] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/environment/path.sh\n'}
+[17.760333] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/environment/path.dsv\n'}
+[17.799107] (-) TimerEvent: {}
+[17.810507] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/local_setup.bash\n'}
+[17.858657] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/local_setup.sh\n'}
+[17.899263] (-) TimerEvent: {}
+[17.912494] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/local_setup.zsh\n'}
+[17.957790] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/local_setup.dsv\n'}
+[17.999394] (-) TimerEvent: {}
+[18.002248] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/package.dsv\n'}
+[18.067243] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ament_index/resource_index/packages/ros_gz_example_bringup\n'}
+[18.099602] (-) TimerEvent: {}
+[18.147088] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/cmake/ros_gz_example_bringupConfig.cmake\n'}
+[18.199753] (-) TimerEvent: {}
+[18.200184] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/cmake/ros_gz_example_bringupConfig-version.cmake\n'}
+[18.259206] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/package.xml\n'}
+[18.297474] (ros_gz_example_bringup) CommandEnded: {'returncode': 0}
+[18.299804] (-) TimerEvent: {}
+[18.400665] (-) TimerEvent: {}
+[18.501278] (-) TimerEvent: {}
+[18.601794] (-) TimerEvent: {}
+[18.702375] (-) TimerEvent: {}
+[18.762699] (ros_gz_example_bringup) JobEnded: {'identifier': 'ros_gz_example_bringup', 'rc': 0}
+[18.773600] (-) EventReactorShutdown: {}
