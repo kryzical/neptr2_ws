@@ -1,0 +1,37 @@
+# RViz Configuration for Robot Leg
+
+VisualizationManager:
+  Class: "rviz/VisualizationManager"
+  Enabled: true
+  Links:
+    - "Robot Model"
+    - "TF"
+    - "Joint States"
+
+Displays:
+  - Class: "rviz/RobotModel"
+    Enabled: true
+    Name: "Robot Model"
+    RobotDescription: "robot_description"  # URDF or SDF model parameter
+    UseTF: true
+    UpdateInterval: 0.1
+    FixedFrame: "base_link"  # Base frame of the robot
+    Visible: true
+
+  - Class: "rviz/TF"
+    Enabled: true
+    Name: "TF"
+    Visible: true
+    FixedFrame: "base_link"
+
+  - Class: "rviz/JointState"
+    Enabled: true
+    Name: "Joint State"
+    Topic: "/joint_states"  # Topic publishing joint state information
+    Visible: true
+
+GlobalOptions:
+  FixedFrame: "base_link"
+  BackgroundColor: [0.0, 0.0, 0.0, 1.0]
+
+# Add additional visualization options as needed.

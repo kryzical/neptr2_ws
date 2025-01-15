@@ -43,6 +43,16 @@ sudo apt-get install -y ignition-fortress
 echo "Installing ROS 2 Gazebo packages..."
 sudo apt-get install -y ros-$ROS_DISTRO-ros-gz
 
+# install random bs for gazebo stuff
+sudo apt-get install libgz-sim7-dev
+
+# Install ROS 2 Gazebo Integration packages
+echo "Installing ROS 2 Gazebo Integration packages..."
+sudo apt-get install -y \
+    ros-humble-ros-gz-bridge \
+    ros-humble-ros-gz-sim \
+    ros-humble-ros-gz-interfaces
+
 # Install joint_state_publisher_gui
 echo "Installing joint_state_publisher_gui..."
 sudo apt-get install -y ros-$ROS_DISTRO-joint-state-publisher-gui

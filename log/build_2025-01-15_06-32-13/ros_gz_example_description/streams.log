@@ -1,0 +1,42 @@
+[0.434s] Invoking command in '/home/ws/build/ros_gz_example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ws/ros_gz_example_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ws/install/ros_gz_example_description
+[0.447s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.492s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.609s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.433s] -- Configuring done
+[1.889s] -- Generating done
+[2.144s] -- Build files have been written to: /home/ws/build/ros_gz_example_description
+[2.147s] Invoked command in '/home/ws/build/ros_gz_example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ws/ros_gz_example_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ws/install/ros_gz_example_description
+[2.157s] Invoking command in '/home/ws/build/ros_gz_example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ws/build/ros_gz_example_description -- -j12 -l12
+[2.276s] Invoked command in '/home/ws/build/ros_gz_example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ws/build/ros_gz_example_description -- -j12 -l12
+[2.299s] Invoking command in '/home/ws/build/ros_gz_example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ws/build/ros_gz_example_description
+[2.312s] -- Install configuration: ""
+[2.329s] -- Execute custom install script
+[2.563s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive/model.config
+[2.648s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive/model.sdf
+[2.734s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/meshes/foot.stl
+[2.829s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/meshes/foot_link.stl
+[2.933s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/meshes/knee.stl
+[2.995s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/meshes/thigh.stl
+[3.053s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/model.sdf
+[3.113s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/neptr.xacro
+[3.168s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/rrbot/model.sdf
+[3.224s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/test/test.sdf
+[3.279s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/test/test2.sdf
+[3.334s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.dsv
+[3.393s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.sh
+[3.444s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_description
+[3.524s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_description
+[3.590s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.sh
+[3.640s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.dsv
+[3.690s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.sh
+[3.741s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.dsv
+[3.789s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.bash
+[3.833s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.sh
+[3.875s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.zsh
+[3.914s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.dsv
+[3.966s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/package.dsv
+[4.027s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ament_index/resource_index/packages/ros_gz_example_description
+[4.093s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig.cmake
+[4.141s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig-version.cmake
+[4.189s] -- Symlinking: /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/package.xml
+[4.225s] Invoked command in '/home/ws/build/ros_gz_example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ws/build/ros_gz_example_description

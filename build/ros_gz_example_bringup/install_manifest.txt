@@ -1,6 +1,9 @@
 /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/launch/diff_drive.launch.py
+/home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/launch/neptr.launch.py
 /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/launch/rrbot_setup.launch.py
+/home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/controller.yaml
 /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/diff_drive.rviz
+/home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/neptr.rviz
 /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/ros_gz_example_bridge.yaml
 /home/ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/rrbot.rviz
 /home/ws/install/ros_gz_example_bringup/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_bringup

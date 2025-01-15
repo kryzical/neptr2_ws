@@ -1,0 +1,44 @@
+[0.244s] Invoking command in '/home/ws/build/ros_gz_example_gazebo': CMAKE_PREFIX_PATH=/home/ws/install/ros_gz_example_description:/home/ws/install/ros_gz_example_bringup:/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_application:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/ws/ros_gz_example_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ws/install/ros_gz_example_gazebo
+[0.313s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.534s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.737s] -- Found ros_gz_example_description: 0.0.0 (/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake)
+[0.743s] -- Looking for gz-plugin2 -- found version 2.0.3
+[0.743s] -- Searching for dependencies of gz-plugin2
+[0.744s] -- Looking for gz-utils2 -- found version 2.2.0
+[0.745s] -- Searching for dependencies of gz-utils2
+[0.746s] -- Searching for <gz-utils2> component [cli]
+[0.747s] -- Looking for gz-utils2-cli -- found version 2.2.0
+[0.749s] -- Searching for dependencies of gz-utils2-cli
+[0.750s] -- Searching for <gz-plugin2> component [register]
+[0.750s] -- Looking for gz-plugin2-register -- found version 2.0.3
+[0.751s] -- Searching for dependencies of gz-plugin2-register
+[0.752s] -- Looking for gz-common5 -- found version 5.7.0
+[0.754s] -- Searching for dependencies of gz-common5
+[0.756s] -- Looking for gz-utils2 -- found version 2.2.0
+[0.757s] -- Looking for dlfcn.h - found
+[0.758s] -- Looking for libdl - found
+[0.759s] -- Checking for module 'uuid'
+[0.845s] --   Found uuid, version 2.37.2
+[0.876s] -- Searching for <gz-common5> component [profiler]
+[0.877s] -- Looking for gz-common5-profiler -- found version 5.7.0
+[0.878s] -- Searching for dependencies of gz-common5-profiler
+[1.158s] [31mCMake Error at CMakeLists.txt:26 (find_package):
+[1.159s]   By not providing "Findgz-sim7.cmake" in CMAKE_MODULE_PATH this project has
+[1.163s]   asked CMake to find a package configuration file provided by "gz-sim7", but
+[1.164s]   CMake did not find one.
+[1.166s] 
+[1.167s]   Could not find a package configuration file provided by "gz-sim7" with any
+[1.170s]   of the following names:
+[1.171s] 
+[1.172s]     gz-sim7Config.cmake
+[1.173s]     gz-sim7-config.cmake
+[1.177s] 
+[1.178s]   Add the installation prefix of "gz-sim7" to CMAKE_PREFIX_PATH or set
+[1.179s]   "gz-sim7_DIR" to a directory containing one of the above files.  If
+[1.180s]   "gz-sim7" provides a separate development package or SDK, be sure it has
+[1.182s]   been installed.
+[1.184s] 
+[1.185s] [0m
+[1.191s] -- Configuring incomplete, errors occurred!
+[1.193s] See also "/home/ws/build/ros_gz_example_gazebo/CMakeFiles/CMakeOutput.log".
+[1.204s] Invoked command in '/home/ws/build/ros_gz_example_gazebo' returned '1': CMAKE_PREFIX_PATH=/home/ws/install/ros_gz_example_description:/home/ws/install/ros_gz_example_bringup:/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_application:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/ws/ros_gz_example_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ws/install/ros_gz_example_gazebo

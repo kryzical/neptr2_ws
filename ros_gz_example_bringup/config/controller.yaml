@@ -1,0 +1,19 @@
+controller_list:
+  # Joint state controller
+  - name: joint_state_controller
+    type: joint_state_controller/JointStateController
+    joints:
+      - upper_leg
+      - lower_leg
+      - foot
+
+  # Knee joint position controller
+  - name: knee_joint_position_controller
+    type: position_controllers/JointPositionController
+    joint: knee_joint
+    pid:
+      p: 100.0
+      i: 0.0
+      d: 0.0
+      i_max: 0.0
+      i_min: 0.0
