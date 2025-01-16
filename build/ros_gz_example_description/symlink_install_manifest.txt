@@ -4,9 +4,13 @@
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/meshes/foot_link.stl
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/meshes/knee.stl
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/meshes/thigh.stl
+/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/model.config
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/model.sdf
+/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/model2.sdf
+/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/neptr.urdf
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/neptr/neptr.xacro
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/rrbot/model.sdf
+/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/rrbot/model2.sdf
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/test/test.sdf
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models/test/test2.sdf
 /home/ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.dsv

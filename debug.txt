@@ -1,0 +1,48 @@
+[INFO] [launch]: All log files can be found below /home/brian/.ros/log/2025-01-16-03-00-52-277280-kyppy-440722
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [440736]
+[INFO] [joint_state_publisher_gui-2]: process started with pid [440738]
+[INFO] [rviz2-3]: process started with pid [440740]
+[rviz2-3] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-brian'
+[robot_state_publisher-1] Error:   Failed to find root link: Two root links found: [dummy_link] and [upper_leg]
+[robot_state_publisher-1]          at line 264 in ./urdf_parser/src/model.cpp
+[robot_state_publisher-1] Failed to parse robot description using: urdf_xml_parser/URDFXMLParser
+[robot_state_publisher-1] terminate called after throwing an instance of 'std::runtime_error'
+[robot_state_publisher-1]   what():  Unable to initialize urdf::model from robot description
+[rviz2-3] [INFO] [1736996452.647305628] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1736996452.647617358] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-3] [INFO] [1736996452.721408484] [rviz2]: Stereo is NOT SUPPORTED
+[joint_state_publisher_gui-2] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-brian'
+[joint_state_publisher_gui-2] [INFO] [1736996453.301332606] [joint_state_publisher_gui]: Waiting for robot_description to be published on the robot_description topic...
+[joint_state_publisher_gui-2] [INFO] [1736996453.334466508] [joint_state_publisher_gui]: Centering
+[joint_state_publisher_gui-2] [INFO] [1736996453.400989163] [joint_state_publisher_gui]: Centering
+[ERROR] [robot_state_publisher-1]: process has died [pid 440736, exit code -6, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args -r __node:=robot_state_publisher --params-file /tmp/launch_params_y8zy3qbp'].
+[INFO] [rviz2-3]: process has finished cleanly [pid 440740]
+[joint_state_publisher_gui-2] Exception in thread Thread-1 (loop):
+[joint_state_publisher_gui-2] Traceback (most recent call last):
+[joint_state_publisher_gui-2]   File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+[joint_state_publisher_gui-2]     self.run()
+[joint_state_publisher_gui-2]   File "/usr/lib/python3.10/threading.py", line 953, in run
+[joint_state_publisher_gui-2]     self._target(*self._args, **self._kwargs)
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/lib/python3.10/site-packages/joint_state_publisher_gui/joint_state_publisher_gui.py", line 266, in loop
+[joint_state_publisher_gui-2]     rclpy.spin_once(self.jsp, timeout_sec=0.1)
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 206, in spin_once
+[joint_state_publisher_gui-2]     executor.spin_once(timeout_sec=timeout_sec)
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[joint_state_publisher_gui-2]     self._spin_once_impl(timeout_sec)
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 736, in _spin_once_impl
+[joint_state_publisher_gui-2]     raise handler.exception()
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+[joint_state_publisher_gui-2]     self._handler.send(None)
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+[joint_state_publisher_gui-2]     await call_coroutine(entity, arg)
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 362, in _execute_subscription
+[joint_state_publisher_gui-2]     await await_or_execute(sub.callback, msg)
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[joint_state_publisher_gui-2]     return callback(*args)
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/lib/python3.10/site-packages/joint_state_publisher/joint_state_publisher.py", line 357, in source_cb
+[joint_state_publisher_gui-2]     self.source_update_cb()
+[joint_state_publisher_gui-2]   File "/opt/ros/humble/lib/python3.10/site-packages/joint_state_publisher_gui/joint_state_publisher_gui.py", line 221, in sliderUpdateCb
+[joint_state_publisher_gui-2]     self.sliderUpdateTrigger.emit()
+[joint_state_publisher_gui-2] RuntimeError: wrapped C/C++ object of type JointStatePublisherGui has been deleted
+[INFO] [joint_state_publisher_gui-2]: process has finished cleanly [pid 440738]
