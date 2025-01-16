@@ -1,0 +1,28 @@
+[0.123s] Invoking command in '/home/ws/build/ros_gz_example_gazebo': CMAKE_PREFIX_PATH=/home/ws/install/ros_gz_example_description:/home/ws/install/ros_gz_example_bringup:/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_application:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/ws/build/ros_gz_example_gazebo -- -j12 -l12
+[0.264s] [100%] Built target BasicSystem
+[0.266s] [100%] Built target FullSystem
+[0.294s] Invoked command in '/home/ws/build/ros_gz_example_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ws/install/ros_gz_example_description:/home/ws/install/ros_gz_example_bringup:/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_application:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/ws/build/ros_gz_example_gazebo -- -j12 -l12
+[0.309s] Invoking command in '/home/ws/build/ros_gz_example_gazebo': CMAKE_PREFIX_PATH=/home/ws/install/ros_gz_example_description:/home/ws/install/ros_gz_example_bringup:/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_application:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/ws/build/ros_gz_example_gazebo
+[0.317s] -- Install configuration: ""
+[0.326s] -- Execute custom install script
+[0.348s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo/libBasicSystem.so
+[0.370s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo/libFullSystem.so
+[0.396s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds/diff_drive.sdf
+[0.413s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.dsv
+[0.430s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.sh
+[0.465s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_gazebo
+[0.498s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_gazebo
+[0.512s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.sh
+[0.529s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.dsv
+[0.544s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.sh
+[0.562s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.dsv
+[0.578s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.bash
+[0.593s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.sh
+[0.608s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.zsh
+[0.622s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.dsv
+[0.629s] -- Symlinking: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.dsv
+[0.686s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/packages/ros_gz_example_gazebo
+[0.705s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig.cmake
+[0.723s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig-version.cmake
+[0.739s] -- Up-to-date symlink: /home/ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.xml
+[0.743s] Invoked command in '/home/ws/build/ros_gz_example_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ws/install/ros_gz_example_description:/home/ws/install/ros_gz_example_bringup:/home/ws/install/ros_gz_example_gazebo:/home/ws/install/ros_gz_example_application:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/ws/install/ros_gz_example_description/share/ros_gz_example_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/ws/build/ros_gz_example_gazebo

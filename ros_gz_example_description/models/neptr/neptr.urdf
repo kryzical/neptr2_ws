@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<robot name="robot_leg">
+  <!-- Upper leg -->
+  <link name="upper_leg">
+    <visual>
+      <geometry>
+        <mesh filename="package://ros_gz_example_description/models/neptr/meshes/thigh.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.4" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Lower leg -->
+  <link name="lower_leg">
+    <visual>
+      <geometry>
+        <mesh filename="package://ros_gz_example_description/models/neptr/meshes/foot_link.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.4" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Foot -->
+  <link name="foot">
+    <visual>
+      <geometry>
+        <mesh filename="package://ros_gz_example_description/models/neptr/meshes/foot.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <!-- Joints -->
+  <joint name="knee_joint" type="revolute">
+    <parent>upper_leg</parent>
+    <child>lower_leg</child>
+    <axis xyz="0 1 0"/>
+    <limit effort="100.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+  </joint>
+  <joint name="ankle_joint" type="fixed">
+    <parent>lower_leg</parent>
+    <child>foot</child>
+  </joint>
+  <!-- Transmissions (Actuators) -->
+  <transmission name="knee_joint_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="knee_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="knee_motor">
+      <hardwareInterface>hardware_interface/EffortActuatorInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+</robot>

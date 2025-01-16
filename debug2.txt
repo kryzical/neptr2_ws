@@ -1,0 +1,9 @@
+[INFO] [1737065357.941504178] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/diff_drive/cmd_vel (geometry_msgs/msg/Twist) -> /model/diff_drive/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[INFO] [1737065358.227223265] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[INFO] [1737065358.232776767] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/model/diff_drive/odometry (gz.msgs.Odometry) -> /diff_drive/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[INFO] [1737065358.235906768] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /diff_drive/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[INFO] [1737065358.239230969] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/demo/model/diff_drive/joint_state (gz.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[INFO] [1737065358.249312072] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/model/diff_drive/pose (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[INFO] [1737065358.254772074] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/model/diff_drive/pose_static (gz.msgs.Pose_V) -> /tf_static (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[WARN] [1737065358.258436275] [ros_gz_bridge]: New subscription discovered on topic '/tf_static', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: DURABILITY_QOS_POLICY
+[INFO] [1737065372.266200181] [rclcpp]: signal_handler(signum=2)

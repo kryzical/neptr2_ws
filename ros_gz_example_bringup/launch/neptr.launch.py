@@ -7,20 +7,21 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # Get the package directory
-    pkg_ros_gz_example = get_package_share_directory('ros_gz_example_description')
+    pkg_ros_gz_example_bringup = get_package_share_directory('ros_gz_example_bringup')
+    pkg_ros_gz_example_description = get_package_share_directory('ros_gz_example_description')
     
     return LaunchDescription([
         # Load robot description
         DeclareLaunchArgument(
             'robot_description',
-            default_value='file:///home/ws/ros_gz_example_description/urdf/robot_leg.xacro',
+            default_value=os.path.join(pkg_ros_gz_example_description, 'models/neptr/neptr.urdf'),
             description='Path to the robot description file'
         ),
         
         # Start Ignition Gazebo
         ExecuteProcess(
-            cmd=['ign', 'gazebo', '-v 4', '--gui-config', '',
-                 os.path.join(pkg_ros_gz_example, 'models/test/test2.sdf')],
+            cmd=['ign', 'gazebo', '-v 4',
+                 os.path.join(pkg_ros_gz_example_description, 'models/neptr/model.sdf')],
             output='screen'
         ),
         
@@ -31,7 +32,7 @@ def generate_launch_description():
             name='parameter_bridge',
             output='screen',
             parameters=[{
-                'config_file': os.path.join(pkg_ros_gz_example, 'config/bridge.yaml'),
+                'config_file': os.path.join(pkg_ros_gz_example_bringup, 'config/ros_gz_example_bridge.yaml'),
                 'qos_overrides./tf_static.publisher.durability': 'transient_local',
             }]
         ),
@@ -58,7 +59,7 @@ def generate_launch_description():
             package='rviz2',
             executable='rviz2',
             name='rviz2',
-            arguments=['-d', os.path.join(pkg_ros_gz_example, 'config/robot.rviz')],
+            arguments=['-d', os.path.join(pkg_ros_gz_example_bringup, 'config/neptr.rviz')],
             output='screen'
         ),
     ])
