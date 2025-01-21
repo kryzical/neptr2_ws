@@ -3,9 +3,6 @@
 # Set ROS Distribution (default to Humble if not set)
 ROS_DISTRO=${ROS_DISTRO:-"humble"}
 
-# Exit immediately if a command fails
-set -e
-
 # Update the system and install essential packages
 echo "Updating system and installing essential tools..."
 sudo apt-get update -q
