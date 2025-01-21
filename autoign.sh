@@ -3,6 +3,8 @@
 # Set ROS Distribution (default to Humble if not set)
 ROS_DISTRO=${ROS_DISTRO:-"humble"}
 
+source /home/ws/install/setup.bash
+
 # Update the system and install essential packages
 echo "Updating system and installing essential tools..."
 sudo apt-get update -q
@@ -17,8 +19,11 @@ sudo apt-get install -yq \
     unzip \
     python3-pip \
     python3-colcon-common-extensions \
-    bash-completion \
-    # Install Gazebo development dependencies
+    bash-completion
+
+# Install Gazebo development dependencies
+echo "Installing Gazebo development dependencies..."
+sudo apt-get install -yq \
     libgz-cmake3-dev \
     libgz-sim7-dev \
     libgz-plugin2-dev  # Include necessary Gazebo plugin development libraries
